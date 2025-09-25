@@ -1,0 +1,173 @@
+:root{
+  --bg-1: #0b1020;
+  --muted: #b7c0e6;
+  --accent1: #FF7AA2; /* coral-pink */
+  --accent2: #6C63FF; /* indigo */
+  --glass: rgba(255,255,255,0.04);
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,#061028 0%, #071425 60%);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* top wave */
+.top-wave{ height:64px; overflow:hidden; }
+.top-wave-svg{ display:block; width:100%; height:150%; }
+
+/* layout grid */
+.layout{
+  max-width:1100px;
+  margin: -36px auto 56px;
+  padding: 20px;
+  display:grid;
+  grid-template-columns: 1fr 420px;
+  gap:28px;
+  align-items:start;
+}
+
+/* LEFT side */
+.left{
+  display:flex;
+  gap:22px;
+  align-items:flex-start;
+  background: var(--card-bg);
+  padding:22px;
+  border-radius:14px;
+  box-shadow: 0 12px 40px rgba(4,6,15,0.6);
+  min-height:240px;
+  margin-top: 50px;
+  flex-direction: row;
+}
+
+/* illustration column */
+.illustration{
+  width:48%;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.blob-svg{ width:100%; height:auto; max-width:260px; opacity:0.98; filter: drop-shadow(0 10px 30px rgba(108,99,255,0.12)); border-radius:12px; }
+.illus-center{ position:absolute; display:flex; align-items:center; justify-content:center; width:100%; height:100%; pointer-events:none;}
+.card-illu{ width:86px; height:86px; border-radius:14px; display:grid; place-items:center; background:rgba(255,255,255,0.9); transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+
+/* left text */
+.left-text{ width:52%; padding:6px 0; }
+.left-text h1{ color:#fff; margin:6px 0 8px; font-size:22px; }
+.left-text .lead{ color:#dbe6ff; margin-bottom:12px; font-size:15px; }
+.info-list{ list-style:none; padding:0; margin:0; color: #b9c6ff; font-size:13px; }
+.info-list li{ margin:6px 0; }
+
+/* RIGHT card (form) */
+.card{
+  background: var(--card-bg);
+  padding:20px;
+  border-radius:14px;
+  box-shadow: 0 12px 38px rgba(4,6,15,0.6);
+  margin-top: 50px;
+}
+
+/* form title */
+.card-title{ color:#eef2ff; margin:0 0 10px; font-size:18px; font-weight:600; }
+
+/* fields - underline floating label */
+.field{ position:relative; margin-bottom:12px; }
+.field input,
+.field textarea{
+  width:100%;
+  background:transparent;
+  border:0;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+  padding:10px 6px 8px;
+  color:#fff;
+  font-size:14px;
+  outline:none;
+  transition: border-color .18s, box-shadow .18s;
+  resize:none;
+}
+.field input::placeholder, .field textarea::placeholder{ color:transparent }
+
+/* label floating */
+.field label{
+  position:absolute;
+  left:6px; top:8px;
+  font-size:13px; color:rgba(255,255,255,0.6);
+  pointer-events:none;
+  transition: transform .16s ease, top .16s, font-size .16s;
+}
+.field input:focus,
+.field textarea:focus,
+.field input:not(:placeholder-shown),
+.field textarea:not(:placeholder-shown){
+  border-bottom-color: rgba(108,99,255,0.95);
+  box-shadow: 0 10px 30px rgba(108,99,255,0.06);
+}
+.field input:focus + label,
+.field textarea:focus + label,
+.field input:not(:placeholder-shown) + label,
+.field textarea:not(:placeholder-shown) + label{
+  transform: translateY(-18px) scale(.92);
+  font-size:12px;
+  color:var(--accent2);
+}
+
+/* error text */
+.field .error{ display:block; color:#ff9aa8; font-size:12px; margin-top:6px; min-height:16px; }
+
+/* button */
+.btn{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:10px;
+  border:0;
+  color:#fff; font-weight:600;
+  background: linear-gradient(90deg,var(--accent1),var(--accent2));
+  box-shadow: 0 12px 30px rgba(108,99,255,0.14);
+  cursor:pointer;
+  transition: transform .14s ease, opacity .14s;
+}
+.btn:hover{ transform: translateY(-3px); }
+
+/* status */
+.status{ margin-top:10px; font-size:13px; color:#bfe8d4; }
+
+/* Autofill background ko remove/override karne ke liye */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* yahan apni form ka bg color do */
+  -webkit-text-fill-color: #f9f9f9 !important; /* text color */
+  transition: background-color 5000s ease-in-out 0s; /* smooth override */
+}
+
+/* responsive */
+@media (max-width:980px){
+  .layout{ grid-template-columns: 1fr; margin:-24px 20px 32px; gap:18px }
+  .left{ align-items:flex-start; min-height:200px; margin-top: 0;}
+  .illustration{ width:60%; }
+  .left-text{ width:100%; }
+  .top-wave{ height:84px }
+  .top-wave-svg{ display:block; width:100%; height:100%; }
+}
+@media (max-width:520px){
+  .layout{ margin:-14px 12px 28px; gap:14px }
+  .left{ padding:16px; border-radius:12px;flex-direction:column; gap: 0;}
+  .left-text{width: 100%;}
+  .card{ padding:14px; border-radius:12px; margin-top: 0;}
+  .left-text h1{ font-size:18px }
+  .left-text .lead{ font-size:14px }
+  .top-wave-svg{ display:block; width:100%; height:100%; }
+}

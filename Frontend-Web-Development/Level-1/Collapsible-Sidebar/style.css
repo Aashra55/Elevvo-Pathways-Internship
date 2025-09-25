@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Body background: dark gradient with black and blue shades */
+body {
+  display: flex;
+  height: 100vh;
+  background: url(image.png) center/cover no-repeat;
+  color: #fff;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.logo {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.links i {
+  margin-right: 10px;
+}
+
+/* Toggle button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+  background: transparent;
+}
+
+.sidebar.closed + .toggle-btn {
+  left: 15px;
+}
+
+/* Main content */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+  transition: margin-left 0.4s ease;
+  color: #fff;
+}
+
+.content p{
+  margin-top: 6px;
+}
+
+.sidebar.closed ~ .content {
+  margin-left: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .toggle-btn {
+    left: 15px;
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .sidebar.closed ~ .content {
+    margin-left: 0;
+  }
+}

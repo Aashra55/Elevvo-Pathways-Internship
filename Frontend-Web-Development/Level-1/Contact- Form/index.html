@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Modern Illustration</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="hero">
+    <!-- Decorative top wave (thin) -->
+    <div class="top-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none" class="top-wave-svg">
+        <defs>
+          <linearGradient id="tw" x1="0" x2="1">
+            <stop offset="0%" stop-color="#FF7AA2"/>
+            <stop offset="100%" stop-color="#6C63FF"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#tw)" d="M0,24L48,42.7C96,61,192,99,288,106.7C384,115,480,93,576,85.3C672,77,768,83,864,96C960,109,1056,128,1152,117.3C1248,107,1344,69,1392,50.7L1440,32L1440,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <section class="layout">
+      <!-- Left illustration / promo -->
+      <div class="left">
+        <!-- editable illustration (SVG + blobs) -->
+        <div class="illustration" aria-hidden="true">
+          <!-- colorful blobs -->
+          <svg viewBox="0 0 600 600" class="blob-svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="gA" x1="0" x2="1">
+                <stop offset="0%" stop-color="#FF7AA2"/>
+                <stop offset="100%" stop-color="#6C63FF"/>
+              </linearGradient>
+            </defs>
+            <g>
+              <ellipse cx="320" cy="220" rx="220" ry="180" fill="url(#gA)" opacity="0.95"/>
+              <circle cx="140" cy="380" r="90" fill="#FFD6E3" opacity="0.6"/>
+              <circle cx="480" cy="420" r="60" fill="#A3A0FF" opacity="0.35"/>
+            </g>
+          </svg>
+
+          <!-- simple hero illustration (chat + envelope) -->
+          <div class="illus-center">
+            <div class="card-illu">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="1" y="4" width="22" height="14" rx="2" fill="#fff" opacity="0.95"/>
+                <path d="M3 6l9 6 9-6" stroke="#6C63FF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-text">
+          <h1>Contact Us</h1>
+          <p class="lead">Have a question, idea or want to collaborate? Send a message and our team will reply within 24 hours.</p>
+          <ul class="info-list">
+            <li><strong>Email:</strong> hello@lunarspark.com</li>
+            <li><strong>Response time:</strong> within 24 hours</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right contact card -->
+      <aside class="card" role="region" aria-label="Contact form">
+        <form id="contactForm" novalidate>
+          <h2 class="card-title">Send a message</h2>
+
+          <div class="field">
+            <input id="name" name="name" type="text" placeholder=" " required />
+            <label for="name">Full name</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <input id="email" name="email" type="email" placeholder=" " required />
+            <label for="email">Email address</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <input id="subject" name="subject" type="text" placeholder=" " required />
+            <label for="subject">Subject</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn">Send message</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
