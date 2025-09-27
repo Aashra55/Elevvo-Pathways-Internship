@@ -1,35 +1,63 @@
-# One-Page Website for Task App
-**Description:**
-Build a **one-page website** for a fictional app called **TaskFlow** – a tool that helps people organize their tasks.
-The website is fully responsive, clean, and component-based, ensuring a smooth user experience across all devices. It engaging animations to make the interface interactive and professional.
+# TaskFlow — One-Page Task Management Website
+
+> **TaskFlow** is a fictional task management app designed to help people **organize, track, and complete tasks effortlessly**.  
+> The website is clean, modern, responsive, and animated to ensure a smooth user experience across all devices.
+
+---
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 ---
 
 ## ✨ Features
-- A top section with:
-  - App name
-  - A short message
-  - A button
-- A section showing **3 features** of the app (each with an icon and description).
-- A section with **2–3 reviews or quotes** from happy users.
-- A section with **3 pricing options** (e.g., Free, Pro, Team).
-- A footer with **contact links** and **social media icons**.
-- Add a **small animation** when each section appears while scrolling down.
-- Design must be **clean and modern**.
-- Should look good on **phones and large screens** (responsive).
+- **Hero Section** with app name, short tagline, and CTA button  
+- **Feature Section** highlighting 3 core benefits (with icons & descriptions)  
+- **Testimonials Section** with 2–3 user reviews/quotes  
+- **Pricing Plans** (Free, Pro, Team) with comparison layout  
+- **Footer** including contact links & social media icons  
+- **Scroll Animations** (sections animate smoothly into view)  
+- **Responsive Design** → mobile-first, works great on small & large screens  
 
 ---
 
-## 🛠️ Tools & Technologies
-- React  
-- Tailwind
-- Framer Motion
-- Lucid React
+## 🛠️ Tech Stack
+- **React**  
+- **Tailwind CSS** (utility-first styling)  
+- **Framer Motion** (animations)  
+- **lucide-react** (icons)  
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone repository
+git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
+cd Elevvo-Pathways-Internship/Frontend-Web-Development/Level-2/taskflow
+
+# Install dependencies
+npm install
+# or
+yarn install
+
+# Run development server
+npm run dev       # Vite / Next.js
+npm start         # CRA
+
+```
+
+---
 
 **Clone Repository**
 https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-2/taskflow
 
 --- 
 
-Developed by **Aashra Saleem**
+## 📬 Contact
+
+Project by **Aashra Saleem**
 🔗 GitHub: [Aashra55](https://github.com/Aashra55)
 📂 Repo: [Taskflow](https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-2/taskflow)
