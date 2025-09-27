@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# GlobByte — Personal Blog (One-Page Website)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Globe, Grub & Code** → *GlobByte*: a clean, responsive, animated one-page blog showcasing **Tech, Travel & Food**.
+> Built with **React**, **Tailwind CSS**, and **Framer Motion** for delightful animations and smooth performance.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge\&logo=framer\&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Fully responsive one-page layout (mobile → desktop)
+* Animated **Header** & **Hero** section with CTA 
+* **Blog section** with category filter + search
+* Smooth scroll to sections (Explore button → Blog section)
+* Footer with **social media icons** (using `lucide-react`)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+* **React**
+* **Tailwind CSS** (utility-first styling)
+* **Framer Motion** (animations)
+* **lucide-react** (icons)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone repo
+git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
+cd Elevvo-Pathways-Internship/Frontend-Web-Development/Level-2/personal-blog
 
-### `npm run eject`
+# Install dependencies
+npm install
+# or
+yarn install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Run development server
+npm start         
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ✅ Best Practices
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Add `loading="lazy"` & `decoding="async"` to `<img>` tags
+* For long post lists → use **pagination** or **react-window** virtualization
+* Respect accessibility → `alt` tags for images, focus handling after scroll
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 License
 
-### Code Splitting
+MIT — free to use and adapt
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repo
+2. Create a branch: `feat/new-feature`
+3. Commit your changes & open a PR
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📬 Contact
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project by **Aashra Saleem**
+🔗 GitHub: [Aashra55](https://github.com/Aashra55)
+📂 Repo: [GlobByte Blog](https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-2/personal-blog)
