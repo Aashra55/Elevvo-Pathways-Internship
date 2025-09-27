@@ -49,11 +49,6 @@ npm start         # CRA
 
 ```
 
----
-
-**Clone Repository**
-https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-2/taskflow
-
 --- 
 
 ## 📬 Contact
