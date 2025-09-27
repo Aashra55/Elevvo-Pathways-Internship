@@ -132,7 +132,7 @@ export const posts = [
     title: "Chai Culture in Pakistan",
     category: "Food",
     date: "2024-05-20",
-    image: "https://images.unsplash.com/photo-1604908177036-1c6e91e58f61",
+    image: "https://media.istockphoto.com/id/1297483389/photo/masala-tea-chai.jpg?b=1&s=612x612&w=0&k=20&c=rR9_DKHUNGAgs9KvAd81iidqmfKLJwRQj7Apk2Y8dYw=",
     description: "Exploring Pakistan’s deep love for chai and its varieties.",
   },
   {
@@ -180,7 +180,7 @@ export const posts = [
     title: "Street Food in Lahore",
     category: "Food",
     date: "2023-11-30",
-    image: "https://images.unsplash.com/photo-1564758563364-4f7ebf3b8d1a",
+    image: "https://images.pexels.com/photos/2165159/pexels-photo-2165159.jpeg",
     description: "A flavorful street food journey through Lahore city.",
   },
   {
@@ -204,7 +204,7 @@ export const posts = [
     title: "BBQ Night in Karachi",
     category: "Food",
     date: "2023-09-18",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dada1",
+    image: "https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg",
     description: "Exploring the smoky BBQ flavors of Karachi.",
   },
   {
@@ -228,7 +228,7 @@ export const posts = [
     title: "Traditional Pakistani Breakfast",
     category: "Food",
     date: "2023-06-23",
-    image: "https://images.unsplash.com/photo-1630854022780-50b62ddb29a6",
+    image: "https://images.pexels.com/photos/8130688/pexels-photo-8130688.jpeg",
     description: "Halwa Puri, Nihari, and more breakfast delights of Pakistan.",
   },
   {

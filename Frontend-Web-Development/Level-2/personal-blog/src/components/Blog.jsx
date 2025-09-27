@@ -16,7 +16,7 @@ const cardVariants = {
 
 export default function Blog({ visiblePosts }) {
   return (
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 h-auto">
+    <div id="blog" className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 h-auto">
       {visiblePosts.map((post, i) => (
         <motion.div
           key={post.id}

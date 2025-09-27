@@ -71,7 +71,8 @@ const Hero = () => {
               insights.
             </motion.p>
 
-            <motion.button
+            <a href="#blog">
+              <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 50 }}
@@ -81,6 +82,7 @@ const Hero = () => {
             >
               Explore Now
             </motion.button>
+            </a>
           </div>
         </div>
       </div>
