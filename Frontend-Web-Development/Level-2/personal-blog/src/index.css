@@ -1,13 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --color-primary: #0077b6;
+}
+
+* {
+  font-family: "Merriweather", serif;
+}
+
+.active-btn {
+  background-color: #d62828d8;
+  color: #fff;
+}
+
+.non-active-btn {
+  color: #4a5759;
+}
+
+.pagination-color {
+  background-color: #fff;
+  color: #d62828;
+}
+
+.footer-icons {
+  color: #d62828;
+}
+
+.text {
+  color: #4a5759;
+}
+
+.header-bg {
+  background-color: #fff;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #219ebc;
+  border-color: #023047;
+}
+
+.regular-font {
+  font-family: "ABeeZee", sans-serif;
+}
+
+.hero-bg {
+  position: relative;
+  height: 87vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../public/images/image.png") no-repeat center center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: 0;                    
+}
+
+.hero-bg > * {
+  position: relative;
+  z-index: 1; 
+}
+
+.logo {
+  color: #023047;
+  font-family: "Sansita Swashed", system-ui;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #d62828;
+  font-weight: 900;
+  transition: all 400ms ease-in;
+}
+
+.hero-btn {
+  background-color: #d628286f;
+  color: white;
+  font-weight: 900;
+  border: 1px solid white;
+}
+
+.span {
+  color: #d62828;
+}
+
+.hero-text {
+  font-family: "Sansita Swashed", system-ui;
+  color: #d62828;
+}
+
+.hero-text-head {
+  -webkit-text-stroke: 1px #d62828;
+  color: #fff;
+}
+
+.nav-links {
+  color: #023047;
+  letter-spacing: 2.5px;
+}
+
+.toggle {
+  color: #023047;
+}
+
+.toggle-bg {
+  background-color: #4a5759a7;
+}
+
+.toggle-text:hover {
+  color: #023047;
+}
+
+.blog-card:hover{
+  scale: 1.1;
+  transition: all 0.5s ease-out;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 15s ease infinite;
+}
+
+.footer-bg {
+  background-color: #ffe5d94d;
+}
+
