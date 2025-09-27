@@ -52,7 +52,7 @@ npm start
 ## ✅ Best Practices
 
 * Add `loading="lazy"` & `decoding="async"` to `<img>` tags
-* For long post lists → use **pagination** or **react-window** virtualization
+* For long post lists → use **pagination** 
 * Respect accessibility → `alt` tags for images, focus handling after scroll
 
 ---
