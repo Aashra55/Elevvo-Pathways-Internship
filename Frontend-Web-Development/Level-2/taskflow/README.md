@@ -44,8 +44,7 @@ npm install
 yarn install
 
 # Run development server
-npm run dev       # Vite / Next.js
-npm start         # CRA
+npm start         
 
 ```
 

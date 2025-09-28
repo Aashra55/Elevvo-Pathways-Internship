@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import ClickStars from "./ClickStars";
+import { useState } from "react";
 
-export default function NavLink({ href, children }) {
+export default function Logo() {
   const [clicks, setClicks] = useState([]);
 
   const handleClick = (e) => {
+    e.preventDefault(); // prevent page reload
     const rect = e.currentTarget.getBoundingClientRect();
     const parentRect = e.currentTarget.offsetParent.getBoundingClientRect();
 
@@ -20,19 +21,18 @@ export default function NavLink({ href, children }) {
   };
 
   return (
-    <>
+    <div className="relative">
       <motion.a
-        href={href}
-        whileHover={{ scale: 1.2, color: "#d62828" }}
-        transition={{ type: "spring", stiffness: 300 }}
-        className="cursor-pointer relative z-10 nav-links"
+        // whileHover={{ scale: 1.1, rotate: -2 }}
+        className="text-2xl md:text-4xl cursor-pointer logo relative z-10"
         onClick={handleClick}
       >
-        {children}
+        GlobBytes
       </motion.a>
+
       {clicks.map((c) => (
-        <ClickStars key={c.id} x={c.x} y={c.y} />
+        <ClickStars key={c.id} x={c.x} y={c.y} count={20} maxDistance={60}/>
       ))}
-    </>
+    </div>
   );
 }
