@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# 🌦️ Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive **Weather Dashboard** built with **React**, powered by **OpenWeatherMap API**, and styled with **Lucide React Icons**.
+It comes with **light/dark themes**, real-time weather updates, and a clean modern UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 🌍 Search weather by city name
+* 🕒 Current weather with temperature, humidity, wind speed, and conditions
+* 📅 Daily and hourly forecast view
+* 🎨 Toggle between **Dark Mode** and **Light Mode**
+* 📱 Fully responsive for desktop, tablet, and mobile
+* ✨ Clean and minimal UI with Lucide React icons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+* **React.js** – Frontend framework
+* **Lucide React** – Modern icons
+* **OpenWeatherMap API** – Weather data
+* **Tailwind CSS** – Styling (if used, adjust accordingly)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+├── public
+│   └── index.html
+├── src
+│   ├── components/   # Reusable UI components
+│   ├── App.jsx
+│   ├── index.js
+│   └── WeatherDashboard.jsx       # Home page of App
+└── package.json
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚡ Getting Started
 
-### `npm run eject`
+### 1. Clone the repo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
+cd weather-dashboard
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+# or
+yarn install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Get API Key
 
-## Learn More
+* Create an account on [OpenWeatherMap](https://openweathermap.org/)
+* Generate your free API key
+* Create a `.env` file in the root directory and add:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+REACT_APP_WEATHER_API_KEY=your_api_key_here
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Run the app
 
-### Code Splitting
+```bash
+npm start
+# or
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🎨 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+*Add screenshots or demo gifs here*
+Example:
+![Weather Dashboard Screenshot](screenshot.png)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Deployment
 
-### Advanced Configuration
+You can deploy the project easily on:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+Contributions, issues, and feature requests are welcome!
+Feel free to open a PR or report a bug.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📜 License
+
+This project is **MIT licensed**.
+
+---
+
+## 🙌 Acknowledgements
+
+* [React.js](https://reactjs.org/)
+* [Lucide React](https://lucide.dev/)
+* [OpenWeatherMap](https://openweathermap.org/)
