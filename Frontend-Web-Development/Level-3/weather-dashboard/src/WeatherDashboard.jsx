@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
 import ForecastCard from "./components/ForecastCard";
 import Loader from "./components/Loader";
+import Toggle from "./components/Toggle";
 
 const apiKey = process.env.REACT_APP_WEATHER_API;
 
@@ -13,6 +14,11 @@ export default function WeatherDashboard() {
   const [hourlyForecast, setHourlyForecast] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [enabled, setEnabled] = useState(false);
+
+  const changeEnabled = ()=>{
+    setEnabled(!enabled)
+  }
 
   const fetchWeather = async (query) => {
     if (!query) return;
@@ -29,7 +35,7 @@ export default function WeatherDashboard() {
       const weatherData = await weatherRes.json();
 
       if (weatherData.cod !== 200) {
-        console.log(weatherData)
+        console.log(weatherData);
         setError("City not found!");
         setLoading(false);
         return;
@@ -82,27 +88,31 @@ export default function WeatherDashboard() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center md:p-6 p-4 body w-[100vw] overflow-hidden">
-      <h1 className="text-2xl lg:text-5xl md:text-4xl text-white font-bold mb-6 mt-3 main-heading">
+    <div className={`min-h-screen bg-gray-100 flex flex-col items-center md:p-6 p-4 w-[100vw] overflow-hidden ${enabled? "dark-body":"light-body"}`}>
+      <h1 className={`text-2xl lg:text-5xl md:text-4xl font-bold mb-6 mt-3 main-heading ${enabled?"text-white":"text-gray-400"}`}>
         🌦️ Real-Time Weather Dashboard
       </h1>
 
-      <SearchBar
-        city={city}
-        setCity={setCity}
-        onSearch={() => fetchWeather(city)}
-      />
-
+      <div className="flex md:items-center items-start w-full md:px-12 md:flex-row flex-col md:gap-0 gap-2">
+        <Toggle changeEnabled={changeEnabled} enabled={enabled}/>
+        <SearchBar
+          city={city}
+          setCity={setCity}
+          onSearch={() => fetchWeather(city)}
+          enabled={enabled}
+        />
+      </div>
       {loading && <Loader />}
       {error && <p className="text-white">{error}</p>}
 
-      {weather && <WeatherCard weather={weather} />}
+      {weather && <WeatherCard weather={weather} enabled={enabled}/>}
 
       {dailyForecast.length > 0 && hourlyForecast.length > 0 && (
         <div className="flex gap-4">
           <ForecastCard
             dailyForecast={dailyForecast}
             hourlyForecast={hourlyForecast}
+            enabled={enabled}
           />
         </div>
       )}

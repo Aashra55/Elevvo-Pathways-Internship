@@ -7,7 +7,7 @@ import {
   Radiation,
 } from "lucide-react";
 
-export default function WeatherCard({ weather }) {
+export default function WeatherCard({ weather, enabled }) {
   const now = new Date();
   const time = now.toLocaleTimeString([], {
     hour: "2-digit",
@@ -40,23 +40,23 @@ export default function WeatherCard({ weather }) {
 
   return (
     <div className="flex gap-2 md:gap-8 md:flex-row flex-col items-center">
-      <div className="shadow rounded-lg p-6 text-center w-72 card">
-        <h2 className="font-bold text-lg mb-2">
-          {weather.name}, {weather.sys.country}{" "}
+      <div className={`shadow rounded-lg p-6 text-center w-72 ${enabled?"dark-card":"light-card"}`}>
+        <h2 className={`font-bold text-lg mb-2 ${enabled?"text-white":"text-gray-600"}`}>
+          {weather.name}, {weather.sys.country}
         </h2>
         {/* Current Time, Date & Day */}
-        <div className="text-gray-600 text-sm mb-4">
+        <div className={`${enabled?"text-white":"text-gray-600"} text-sm mb-4`}>
           <h1 className="md:text-5xl text-4xl font-bold mt-8">{time}</h1>
           <p>
             {day}, {date}
           </p>
         </div>
       </div>
-      <div className="bg-gray-800 text-white shadow-lg rounded-xl p-6 flex items-center justify-between w-[700px] card space-x-8 my-4 md:flex-row flex-col">
+      <div className={`shadow-lg rounded-xl p-6 flex items-center justify-between w-[700px] space-x-8 my-4 md:flex-row flex-col ${enabled?"dark-card text-white":"light-card text-gray-600"}`}>
         {/* Temperature */}
         <div className="flex flex-col items-start">
           <p className={`md:text-6xl text-4xl font-bold ${tempColor}`}>{temp}°C</p>
-          <p className="text-gray-300 text-sm">Feels like: <span className="font-bold">{feelsLike}°C</span></p>
+          <p className={`${enabled?"text-gray-300":"text-gray-600"} text-sm`}>Feels like: <span className="font-bold">{feelsLike}°C</span></p>
         </div>
 
         {/* Icon & Condition */}
@@ -74,42 +74,42 @@ export default function WeatherCard({ weather }) {
           <div className="flex items-center gap-2">
             <Sunrise className="w-5 h-5 text-yellow-400" />
             <div>
-              <p className="text-gray-300">Sunrise</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>Sunrise</p>
               <p>{sunrise}</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Sunset className="w-5 h-5 text-orange-400" />
             <div>
-              <p className="text-gray-300">Sunset</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>Sunset</p>
               <p>{sunset}</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Droplets className="w-5 h-5 text-blue-400" />
             <div>
-              <p className="text-gray-300">Humidity</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>Humidity</p>
               <p>{weather.main.humidity}%</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Wind className="w-5 h-5 text-teal-400" />
             <div>
-              <p className="text-gray-300">Wind</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>Wind</p>
               <p>{weather.wind.speed} km/h</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Gauge className="w-5 h-5 text-purple-400" />
             <div>
-              <p className="text-gray-300">Pressure</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>Pressure</p>
               <p>{weather.main.pressure} hPa</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Radiation className="w-5 h-5 text-red-400" />
             <div>
-              <p className="text-gray-300">UV</p>
+              <p className={`${enabled?"text-gray-300":"text-gray-600"}`}>UV</p>
               <p>8</p>
             </div>
           </div>

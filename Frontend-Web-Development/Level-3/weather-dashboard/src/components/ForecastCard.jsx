@@ -1,11 +1,11 @@
 import { Wind } from "lucide-react";
 
-export default function ForecastSection({ dailyForecast, hourlyForecast }) {
+export default function ForecastSection({ dailyForecast, hourlyForecast, enabled }) {
   return (
     <div className="flex flex-col lg:flex-row gap-8 w-full items-center forecast w-full md:px-0 px-[6px]">
       {/* Daily Forecast */}
-      <div className="p-4 rounded-xl shadow card md:w-full w-3/5">
-        <h2 className="text-lg font-bold text-white mb-3">5 Days Forecast</h2>
+      <div className={`p-4 rounded-xl shadow card md:w-full w-3/5 ${enabled?"dark-card":"light-card"} shadow-lg`}>
+        <h2 className={`text-lg font-bold mb-3 ${enabled?"text-white":"text-gray-600"}`}>5 Days Forecast</h2>
 
         <div>
           {dailyForecast.map((day, idx) => {
@@ -33,7 +33,7 @@ export default function ForecastSection({ dailyForecast, hourlyForecast }) {
                 </div>
 
                 {/* Day + Date */}
-                <div className="text-right text-gray-300 flex items-center gap-1">
+                <div className={`text-right flex items-center gap-1 ${enabled?"text-gray-300":"text-gray-600"}`}>
                   <p className="font-medium">
                     {date.toLocaleDateString("en-US", { weekday: "long" })},
                   </p>
@@ -51,10 +51,10 @@ export default function ForecastSection({ dailyForecast, hourlyForecast }) {
       </div>
 
       {/* Hourly Forecast */}
-      <div className="md:p-6 p-4 md:px-10 rounded-xl shadow card md:w-full w-3/5">
-        <h2 className="text-lg font-bold text-white mb-4">Hourly Forecast</h2>
+      <div className={`md:p-6 p-4 md:px-10 rounded-xl shadow md:w-full w-3/5 ${enabled?"dark-card":"light-card"} shadow-lg`}>
+        <h2 className={`text-lg font-bold mb-4 ${enabled?"text-white":"text-gray-600"}`}>Hourly Forecast</h2>
 
-        <div className="flex flex-row space-x-2 md:flex-shrink-0 overflow-x-auto">
+        <div className={`flex flex-row space-x-2 md:flex-shrink-0 overflow-x-auto`}>
           {hourlyForecast.map((hour, idx) => {
             const date = new Date(hour.dt_txt);
             const temp = Math.round(hour.main.temp);
@@ -67,10 +67,10 @@ export default function ForecastSection({ dailyForecast, hourlyForecast }) {
             return (
               <div
                 key={idx}
-                className="flex flex-col md:gap-0 gap-1 items-center rounded-lg p-3 w-24 shadow hourly-cards"
+                className={`flex flex-col md:gap-0 gap-1 items-center rounded-lg p-3 w-24 shadow ${enabled?"hourly-dark-cards":"hourly-light-cards"}`}
               >
                 {/* Time */}
-                <p className="text-sm text-gray-300 font-medium">
+                <p className={`text-sm font-medium ${enabled?"text-gray-300":"text-gray-600"}`}>
                   {date.toLocaleTimeString("en-US", {
                     hour: "2-digit",
                     minute: "2-digit",
@@ -90,8 +90,8 @@ export default function ForecastSection({ dailyForecast, hourlyForecast }) {
 
                 {/* Wind */}
                 <div className="flex gap-1 justify-center items-center flex-col mt-2">
-                  <Wind size={18} />
-                  <p className="text-xs text-gray-400">
+                  <Wind size={18} className="text-blue-300"/>
+                  <p className={`text-xs ${enabled?"text-gray-400":"text-gray-700"}`}>
                     {hour.wind.speed} km/h
                   </p>
                 </div>
