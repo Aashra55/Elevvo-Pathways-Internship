@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+
+  background: linear-gradient(
+    120deg,
+    #c1c1c1 0%,   /* warm golden */
+    #3b3a3a 100%  /* peach-orange */
+  );
+
+  background-repeat: no-repeat;
+}
+
+*{
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.card{
+    background-color: #414141;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  scale: 1.1;
+  background-color: #fff;
+  color: #414141;
+}
+
+.button:active{
+  scale: 1;
+}
+
+.input{
+  background-color: #414141;
+  color: white;
+  border-color: #414141;
+}
+
+.hourly-cards{
+  background-color: #272626;
+  border-radius: 8px;
+}
+
+.forecast{
+  background: transparent;
+}
