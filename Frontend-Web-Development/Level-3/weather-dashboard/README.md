@@ -79,9 +79,6 @@ yarn start
 
 ## 🎨 Screenshots
 
-*Add screenshots or demo gifs here*
-Example:
-![Weather Dashboard Screenshot](screenshot.png)
 
 ---
 
