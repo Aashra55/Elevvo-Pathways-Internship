@@ -79,10 +79,9 @@ yarn start
 
 ## 🎨 Screenshots
 
-*Add screenshots or demo gifs here*
-Example:
-![Weather Dashboard Screenshot](screenshot.png)
+![Dark Theme Weather Dashboard Screenshot](./dark-theme.png)
 
+![Light Theme Weather Dashboard Screenshot](./light-theme.png)
 ---
 
 ## 🌐 Deployment
