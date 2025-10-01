@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# 📌 Job Application Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive **Job Application Tracker App** built with **React, Redux Toolkit, TailwindCSS, and Framer Motion**.
+This app helps users manage and track their job applications in one place with filtering, searching, and favorites support.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* 🔹 **Add Job Applications** – Save company name, job title, status, category, date, and notes.
+* 🔹 **Edit & Delete Jobs** – Update details or remove applications anytime.
+* 🔹 **Search & Filter** – Filter jobs by status (Applied, Interviewing, Offer, Rejected) and category (Internship, Full-time, Part-time, Freelance).
+* 🔹 **Favorites** – Mark important jobs as favorites ⭐ and view them separately.
+* 🔹 **Responsive Design** – Fully responsive UI with a modern header, homepage, and dashboard.
+* 🔹 **Animations** – Smooth transitions using **Framer Motion**.
+* 🔹 **Persistent Storage** – Data is saved to `localStorage`, so jobs remain even after refresh.
+* 🔹 **Export & Import JSON** – Export your job applications to a `.json` file and restore them anytime.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+* ⚛️ **React 18**
+* 🗂 **Redux Toolkit** (State Management)
+* 🎨 **Tailwind CSS** (Styling)
+* 🎬 **Framer Motion** (Animations)
+* 📦 **Lucide Icons** (UI Icons)
+* 💾 **LocalStorage** (Persistent Storage)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📷 Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🏠 Home Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Modern landing page with animations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Home Page](image.png)
 
-### `npm run eject`
+### 📊 Dashboard
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* View all job applications.
+* Apply filters, search, and view favorites.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Dashboard](image-1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ➕ Add Job Form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Add company details, category, status, and notes.
 
-## Learn More
+![Form](image-2.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚡ Installation
 
-### Code Splitting
+1. Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
+   cd job-tracker
+   ```
 
-### Analyzing the Bundle Size
+2. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm install
+   ```
 
-### Making a Progressive Web App
+3. Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm start
+   ```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📂 Project Structure
 
-### Deployment
+```
+src/
+ ├── components/     # Reusable UI components
+ ├── pages/          # Page components (Home, Dashboard, AddJob, JobDetails)
+ ├── store/          # Redux store and slices
+ ├── App.js          # Main app component
+ └── index.js        # Entry point
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🔮 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* 📌 Authentication (Login/Signup with Firebase or JWT).
+* 📌 Cloud Database (MongoDB / Firebase Firestore instead of localStorage).
+* 📌 Resume Upload Feature.
+* 📌 Calendar Integration (Interview Reminders).
+* 📌 Dark Mode Theme.
+
+---
+
+## 👩‍💻 Author
+
+Developed by **Aashra Saleem** ✨
+Frontend Developer | React | Next.js | TailwindCSS

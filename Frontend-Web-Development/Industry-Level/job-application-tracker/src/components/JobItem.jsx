@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { Briefcase, Calendar } from "lucide-react";
 import { Star, StarOff } from "lucide-react";
 import { useDispatch } from "react-redux";
-import { updateJob } from "../store/jobsSlice";
+import { updateJob, deleteJob } from "../store/jobsSlice";
+import { useNavigate } from "react-router-dom";
+import { Trash2 } from "lucide-react";
 
 export default function JobItem({ job }) {
   const dispatch = useDispatch();
@@ -10,6 +12,7 @@ export default function JobItem({ job }) {
   const toggleFavorite = () => {
     dispatch(updateJob({ ...job, favorite: !job.favorite }));
   };
+  const navigate = useNavigate();
 
   // Status colors mapping
   const statusColors = {
@@ -18,7 +21,10 @@ export default function JobItem({ job }) {
     Offer: "bg-green-100 text-green-700",
     Rejected: "bg-red-100 text-red-700",
   };
-
+  const handleDelete = () => {
+    dispatch(deleteJob(job.id));
+    navigate("/dashboard");
+  };
   return (
     <div className="group relative p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all bg-white">
       {/* Company + Job */}
@@ -88,6 +94,12 @@ export default function JobItem({ job }) {
             ) : (
               <StarOff className="w-5 h-5 text-gray-400 hover:text-yellow-400 transition-colors" />
             )}
+          </button>
+          <button
+            onClick={handleDelete}
+            className="flex items-center gap-2 text-white px-1 py-1 rounded-lg transition ml-3"
+          >
+            <Trash2 className="md:w-5 md:h-5 w-4 h-4 text-red-600" />
           </button>
         </div>
       </div>
