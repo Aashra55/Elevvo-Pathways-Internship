@@ -35,20 +35,20 @@ This app helps users manage and track their job applications in one place with f
 
 Modern landing page with animations.
 
-![Home Page](image.png)
+![Home Page](home-page.png)
 
 ### 📊 Dashboard
 
 * View all job applications.
 * Apply filters, search, and view favorites.
 
-![Dashboard](image-1.png)
+![Dashboard](dashboard.png)
 
 ### ➕ Add Job Form
 
 * Add company details, category, status, and notes.
 
-![Form](image-2.png)
+![Form](add-job-form.png)
 
 ---
 
