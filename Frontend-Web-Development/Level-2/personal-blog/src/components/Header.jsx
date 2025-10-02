@@ -43,7 +43,7 @@ export default function Header() {
       ))}
 
       {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-6 font-semibold">
+      <nav className="hidden md:flex gap-6 font-semibold md:text-lg">
         {navItems.map((item, idx) => (
           <NavLink key={idx} href={`#${item.toLowerCase()}`}>
             {item}

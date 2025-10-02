@@ -4,7 +4,7 @@ export const posts = [
     title: "Getting Started with React",
     category: "Tech",
     date: "2025-09-20",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=600",
     description: "Learn the basics of React and how to build modern UIs.",
   },
   {
@@ -12,7 +12,7 @@ export const posts = [
     title: "My Trip to Turkey",
     category: "Travel",
     date: "2025-08-10",
-    image: "https://images.squarespace-cdn.com/content/v1/5f246041d3f4b53e299de879/1613854407283-NWYCJNDQLQCPHTFQHVGL/CAPPADOCIA_BALLONSret.jpg",
+    image: "https://images.squarespace-cdn.com/content/v1/5f246041d3f4b53e299de879/1613854407283-NWYCJNDQLQCPHTFQHVGL/CAPPADOCIA_BALLONSret.jpg?format=500w",
     description: "Exploring Istanbul, Cappadocia, and the culture of Turkey.",
   },
   {
@@ -20,7 +20,7 @@ export const posts = [
     title: "Top 5 Pakistani Foods",
     category: "Food",
     date: "2025-07-15",
-    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=60",
     description: "A delicious journey through Pakistani cuisine.",
   },
   {
@@ -28,7 +28,7 @@ export const posts = [
     title: "Advanced JavaScript Tricks",
     category: "Tech",
     date: "2025-06-12",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=60",
     description: "Take your JS skills to the next level with these tricks.",
   },
   {
@@ -36,7 +36,7 @@ export const posts = [
     title: "Exploring Northern Pakistan",
     category: "Travel",
     date: "2025-05-01",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=60",
     description: "Mountains, lakes, and adventures in the north.",
   },
   {
@@ -44,7 +44,7 @@ export const posts = [
     title: "Node.js for Beginners",
     category: "Tech",
     date: "2025-04-18",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60",
     description: "An introduction to server-side JavaScript with Node.js.",
   },
   {
@@ -52,7 +52,7 @@ export const posts = [
     title: "Street Food Tour in Karachi",
     category: "Food",
     date: "2025-03-25",
-    image: "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=60",
     description: "Discovering the best street food in Karachi.",
   },
   {
@@ -60,7 +60,7 @@ export const posts = [
     title: "Hiking in Skardu",
     category: "Travel",
     date: "2025-02-10",
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=60",
     description: "A breathtaking hiking experience in the mountains of Skardu.",
   },
   {
@@ -68,7 +68,7 @@ export const posts = [
     title: "CSS Grid vs Flexbox",
     category: "Tech",
     date: "2025-01-22",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60",
     description: "When to use CSS Grid and when to use Flexbox.",
   },
   {
@@ -76,7 +76,7 @@ export const posts = [
     title: "Homemade Biryani Recipe",
     category: "Food",
     date: "2024-12-15",
-    image: "https://yummyindiankitchen.com/wp-content/uploads/2021/01/pakistani-biryani-recipe-with-chicken.jpg",
+    image: "https://yummyindiankitchen.com/wp-content/uploads/2021/01/pakistani-biryani-recipe-with-chicken.jpg?w=600&h=400",
     description: "Step-by-step guide to cooking delicious biryani at home.",
   },
   {
@@ -84,7 +84,7 @@ export const posts = [
     title: "Top 10 JavaScript Libraries in 2025",
     category: "Tech",
     date: "2024-11-30",
-    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296",
+    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=60",
     description: "A list of must-know JavaScript libraries for developers.",
   },
   {
@@ -92,7 +92,7 @@ export const posts = [
     title: "Travel Guide to Hunza Valley",
     category: "Travel",
     date: "2024-10-05",
-    image: "https://www.jasminetours.com/wp-content/uploads/2023/11/timeline-photo-1.jpg",
+    image: "https://www.jasminetours.com/wp-content/uploads/2023/11/timeline-photo-1.jpg?w=600&h=400",
     description: "Everything you need to know before visiting Hunza Valley.",
   },
   {
@@ -108,7 +108,7 @@ export const posts = [
     title: "Mastering TypeScript",
     category: "Tech",
     date: "2024-08-01",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60",
     description: "Learn advanced TypeScript features for scalable apps.",
   },
   {
@@ -124,7 +124,7 @@ export const posts = [
     title: "Frontend Development Roadmap 2025",
     category: "Tech",
     date: "2024-06-05",
-    image: "https://images.unsplash.com/photo-1581091215367-59ab6e33c1a7",
+    image: "https://images.unsplash.com/photo-1581091215367-59ab6e33c1a7?auto=format&fit=crop&w=600&q=60",
     description: "A complete guide to becoming a frontend developer in 2025.",
   },
   {
@@ -140,7 +140,7 @@ export const posts = [
     title: "Exploring Murree Hills",
     category: "Travel",
     date: "2024-04-15",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=60",
     description: "A weekend escape to the scenic Murree Hills of Pakistan.",
   },
   {
@@ -148,7 +148,7 @@ export const posts = [
     title: "Git & GitHub Made Easy",
     category: "Tech",
     date: "2024-03-28",
-    image: "https://images.unsplash.com/photo-1629904853693-0c3d5f4672b6",
+    image: "https://images.unsplash.com/photo-1629904853693-0c3d5f4672b6?auto=format&fit=crop&w=600&q=60",
     description: "Learn how to use Git and GitHub effectively for projects.",
   },
   {
@@ -156,7 +156,7 @@ export const posts = [
     title: "Pakistani Desserts You Must Try",
     category: "Food",
     date: "2024-02-10",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=60",
     description: "From Gulab Jamun to Kheer – a sweet journey of Pakistan.",
   },
   {
@@ -164,7 +164,7 @@ export const posts = [
     title: "Best Trekking Spots in Pakistan",
     category: "Travel",
     date: "2024-01-14",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60",
     description: "Discover top trekking destinations across Pakistan.",
   },
   {
@@ -172,7 +172,7 @@ export const posts = [
     title: "React vs Next.js – What to Choose?",
     category: "Tech",
     date: "2023-12-22",
-    image: "https://images.unsplash.com/photo-1581276879432-15a43a1bcd5d",
+    image: "https://images.unsplash.com/photo-1581276879432-15a43a1bcd5d?auto=format&fit=crop&w=600&q=60",
     description: "A detailed comparison of React and Next.js for developers.",
   },
   {
@@ -188,7 +188,7 @@ export const posts = [
     title: "Winter Trip to Swat Valley",
     category: "Travel",
     date: "2023-11-05",
-    image: "https://images.unsplash.com/photo-1521207418485-99c705420785",
+    image: "https://images.unsplash.com/photo-1521207418485-99c705420785?auto=format&fit=crop&w=600&q=60",
     description: "Snowy adventures in the Switzerland of the East – Swat.",
   },
   {
@@ -196,7 +196,7 @@ export const posts = [
     title: "Top VS Code Extensions",
     category: "Tech",
     date: "2023-10-12",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=60",
     description: "Boost your productivity with these VS Code extensions.",
   },
   {
@@ -212,7 +212,7 @@ export const posts = [
     title: "Adventure in Fairy Meadows",
     category: "Travel",
     date: "2023-08-29",
-    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=60",
     description: "A magical experience in the heart of northern Pakistan.",
   },
   {
@@ -220,7 +220,7 @@ export const posts = [
     title: "Building REST APIs with Express",
     category: "Tech",
     date: "2023-07-11",
-    image: "https://images.unsplash.com/photo-1581091012184-5c5a4f4d8e07",
+    image: "https://images.unsplash.com/photo-1581091012184-5c5a4f4d8e07?auto=format&fit=crop&w=600&q=60",
     description: "Step-by-step tutorial to build REST APIs using Express.js.",
   },
   {
@@ -236,7 +236,7 @@ export const posts = [
     title: "A Road Trip Across Balochistan",
     category: "Travel",
     date: "2023-05-08",
-    image: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef",
+    image: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=600&q=60",
     description: "Discover the hidden beauty of Balochistan’s landscapes.",
   },
 ];
