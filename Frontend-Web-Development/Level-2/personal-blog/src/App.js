@@ -7,6 +7,7 @@ import "./index.css";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
+import { Search } from "lucide-react";
 
 export default function App() {
   const [category, setCategory] = useState("All");
@@ -34,15 +35,17 @@ export default function App() {
       <div className="max-w-6xl mx-auto px-4 homepage pt-7 w-full h-full">
         {/* Search */}
         <div className="flex justify-center my-6">
-          <input
-            type="text"
-            placeholder="Search posts..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="px-4 py-2 w-full max-w-md border rounded-lg regular-font"
-          />
-        </div>
-
+          <div className="relative w-full max-w-md">
+            <Search className="absolute left-3 top-1/4 -translate-y-1/2 text-gray-500 w-5 h-5" />
+            <input
+              type="text"
+              placeholder="Search posts..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="pl-10 pr-4 py-2 w-full border rounded-lg regular-font"
+            />
+          </div>
+        </div>{" "}
         {/* Category Filter */}
         <CategoryFilter
           categories={categories}
@@ -52,8 +55,7 @@ export default function App() {
             setPage(1); // reset page
           }}
         />
-
-        <Blog visiblePosts={visiblePosts}/>
+        <Blog visiblePosts={visiblePosts} />
         {/* Pagination */}
         <Pagination
           currentPage={page}
