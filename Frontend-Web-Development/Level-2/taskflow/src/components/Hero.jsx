@@ -43,7 +43,7 @@ export default function Hero() {
         Organize your tasks, boost productivity, and stay on top of your goals.
       </motion.p>
 
-      {/* Button with hover and tap animations */}
+      {/* Button with hover and click animations */}
       <motion.button
         className="px-6 sm:px-8 py-3 sm:py-4 bg-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all text-sm sm:text-base md:text-lg"
         style={{ color: '#008B8B' }}

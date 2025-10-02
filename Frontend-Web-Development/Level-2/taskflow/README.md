@@ -23,6 +23,18 @@
 
 ---
 
+## Screenshots
+
+## Hero Section
+
+![Hero Section](hero-sec.png)
+
+## Main Content
+
+![Main Content](content.png)
+
+---
+
 ## 🛠️ Tech Stack
 - **React**  
 - **Tailwind CSS** (utility-first styling)  

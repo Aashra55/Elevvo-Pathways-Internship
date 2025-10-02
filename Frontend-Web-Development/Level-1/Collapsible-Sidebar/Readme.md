@@ -15,6 +15,12 @@ The sidebar can smoothly open/close when toggled, includes a placeholder for a l
 
 ---
 
+## Screenshots
+
+![Collapsible Sidebar](screenshot.png)
+
+---
+
 ## 🛠️ Tools & Technologies
 - HTML  
 - CSS  

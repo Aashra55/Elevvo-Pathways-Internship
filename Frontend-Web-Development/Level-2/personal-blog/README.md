@@ -22,6 +22,18 @@
 
 ---
 
+## Screenshots
+
+## Hero Section
+
+![Hero Section](hero-sec.png)
+
+## Blog Section
+
+![Blog Section](blog-sec.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 * **React**

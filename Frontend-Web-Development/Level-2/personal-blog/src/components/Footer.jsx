@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10">
         {/* Top section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Brand / Logo */}
+          {/* Brand or Logo */}
           <h1 className="text-3xl logo" style={{ color: "#023047" }}>
             GlobByte
           </h1>
@@ -55,7 +55,7 @@ export default function Footer() {
             </a>
           </nav>
 
-          {/* Socials */}
+          {/* Social Icons */}
           <div className="flex gap-4">
             <a
               href="#"

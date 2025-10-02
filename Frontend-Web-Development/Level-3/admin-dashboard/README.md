@@ -22,6 +22,22 @@ This dashboard is designed for a **fictional freelance client** and includes an 
   - Smooth transitions powered by **Framer Motion**
 - **Modern Styling**
   - Tailwind CSS with custom colors and shadows
+---
+
+## 📸 Screenshot
+
+## Overview
+
+![Overview](overview.png)
+
+
+## Projects Section
+
+![Projects](projects.png)
+
+## Profile Section
+
+![Profile](profile.png)
 
 ---
 
@@ -39,7 +55,7 @@ This dashboard is designed for a **fictional freelance client** and includes an 
 ```bash
 # Clone repository
 git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
-cd Elevvo-Pathways-Internship/Frontend-Web-Development/Level-3/dashboard
+cd Elevvo-Pathways-Internship/Frontend-Web-Development/Level-3/admin-dashboard
 
 # Install dependencies
 npm install
@@ -53,11 +69,6 @@ npm start
 
 ---
 
-## 📸 Screenshot
-![Screenshot](image.png)
-
----
-
 ## 🤝 Contributing
 Contributions are welcome! If you’d like to improve the design, fix bugs, or add features, feel free to fork and open a pull request.
 
@@ -68,5 +79,5 @@ This project is licensed under the MIT License – you’re free to use and modi
 
 Project by **Aashra Saleem**
 🔗 GitHub: [Aashra55](https://github.com/Aashra55)
-📂 Repo: [Freelance Dashboard](https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-3/dashboard)
+📂 Repo: [Admin Dashboard](https://github.com/Aashra55/Elevvo-Pathways-Internship/tree/main/Frontend-Web-Development/Level-3/dashboard)
 

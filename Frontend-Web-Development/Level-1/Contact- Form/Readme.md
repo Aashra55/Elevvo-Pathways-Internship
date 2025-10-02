@@ -19,6 +19,12 @@ The form is designed to work seamlessly across all screen sizes (desktop, tablet
 
 ---
 
+## Screenshots
+
+![Contact Form](screenshot.png)
+
+---
+
 ## 🛠️ Tools & Technologies
 - HTML  
 - CSS  

@@ -11,12 +11,12 @@ export default function DashboardLayout() {
   return (
     <div className="flex h-screen dashboard">
       {/* Sidebar */}
-      {/* Desktop -> always visible */}
+      {/* Desktop */}
       <div className="hidden md:flex">
         <Sidebar />
       </div>
 
-      {/* Mobile -> slide-in sidebar */}
+      {/* Mobile */}
       {sidebarOpen && (
         <div className="fixed inset-y-0 left-0 z-40 w-64 bg-black shadow-lg">
     <Sidebar mobile={true}/>

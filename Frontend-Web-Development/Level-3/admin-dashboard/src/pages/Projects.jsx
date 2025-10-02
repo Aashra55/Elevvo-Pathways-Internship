@@ -36,9 +36,9 @@ export default function Projects() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="border-b border-gray-700/40 last:border-none"
+              className=" border-gray-700/40 last:border-none"
             >
-              <td className="p-2">{p.name}</td>
+              <td className="p-2 py-3">{p.name}</td>
               <td
                 className={`p-2 font-bold ${
                   p.status === "Completed"

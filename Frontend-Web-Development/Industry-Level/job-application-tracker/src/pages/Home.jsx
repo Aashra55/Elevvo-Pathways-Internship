@@ -30,7 +30,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Manage Your <span className="text-indigo-600">Job Hunt</span> Like a Pro
+          Manage Your <span className="text-indigo-600">Job Hunt</span> Like a
+          Pro
         </motion.h1>
 
         <motion.p
@@ -39,8 +40,8 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
-          A simple, modern, and powerful web app to keep track of your job applications — 
-          from applying to landing the offer.
+          A simple, modern, and powerful web app to keep track of your job
+          applications — from applying to landing the offer.
         </motion.p>
 
         <motion.a
@@ -65,7 +66,9 @@ export default function Home() {
               transition={{ delay: 0.2 * i, duration: 0.7 }}
             >
               <div className="mb-4">{f.icon}</div>
-              <h3 className="md:text-xl text-lg font-semibold mb-2">{f.title}</h3>
+              <h3 className="md:text-xl text-lg font-semibold mb-2">
+                {f.title}
+              </h3>
               <p className="text-gray-600 md:text-md text-sm">{f.desc}</p>
             </motion.div>
           ))}
@@ -73,25 +76,24 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-{/* CTA */}
-<section className="text-center py-20 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-900">
-  <motion.h2
-    className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6"
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-  >
-    Ready to land your dream job?
-  </motion.h2>
-  <motion.a
-    href="/add"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="inline-block md:px-6 px-4 md:py-3 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow-md hover:bg-indigo-700 transition-colors"
-  >
-    Add Your First Job
-  </motion.a>
-</section>
+      <section className="text-center py-20 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-900">
+        <motion.h2
+          className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          Ready to land your dream job?
+        </motion.h2>
+        <motion.a
+          href="/add"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-block md:px-6 px-4 md:py-3 py-2 rounded-lg bg-indigo-600 text-white font-medium shadow-md hover:bg-indigo-700 transition-colors"
+        >
+          Add Your First Job
+        </motion.a>
+      </section>
     </div>
   );
 }

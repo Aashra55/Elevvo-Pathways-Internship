@@ -34,7 +34,7 @@ It comes with **light/dark themes**, real-time weather updates, and a clean mode
 │   ├── components/   # Reusable UI components
 │   ├── App.jsx
 │   ├── index.js
-│   └── WeatherDashboard.jsx       # Home page of App
+│   └── WeatherDashboard.jsx    # Home page of App
 └── package.json
 ```
 
@@ -46,6 +46,7 @@ It comes with **light/dark themes**, real-time weather updates, and a clean mode
 
 ```bash
 git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
+cd Elevvo-Pathways-Internship/Frontend-Web-Development/Level-3
 cd weather-dashboard
 ```
 
@@ -79,9 +80,14 @@ yarn start
 
 ## 🎨 Screenshots
 
+## Dark Theme
+
 ![Dark Theme Weather Dashboard Screenshot](./dark-theme.png)
 
+## Light Theme
+
 ![Light Theme Weather Dashboard Screenshot](./light-theme.png)
+
 ---
 
 ## 🌐 Deployment
