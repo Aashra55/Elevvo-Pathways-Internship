@@ -57,8 +57,8 @@ Modern landing page with animations.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/Aashra55/Elevvo-Pathways-Internship.git
-   cd job-tracker
+   git clone https://github.com/Aashra55/Elevvo-Pathways-Internship/Frontend-Web-Development/Industry-Level.git
+   cd job-application-tracker
    ```
 
 2. Install dependencies
