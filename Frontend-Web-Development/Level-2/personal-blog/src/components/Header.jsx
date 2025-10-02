@@ -35,6 +35,7 @@ export default function Header() {
         whileHover={{ scale: 1.1, rotate: -2 }}
         className="text-2xl md:text-5xl cursor-pointer logo relative z-10"
         onClick={handleClick}
+        href="#home"
       >
         GlobByte
       </motion.a>
@@ -43,7 +44,7 @@ export default function Header() {
       ))}
 
       {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-6 font-semibold md:text-lg">
+      <nav className="hidden md:flex gap-6 font-semibold">
         {navItems.map((item, idx) => (
           <NavLink key={idx} href={`#${item.toLowerCase()}`}>
             {item}
@@ -64,13 +65,13 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
-          className="absolute top-16 right-6 toggle-bg backdrop-blur-md rounded-xl p-4 flex flex-col gap-4 w-40 text-center md:hidden"
+          className="absolute top-16 right-6 bg-white rounded-xl p-4 flex flex-col gap-4 w-40 text-center md:hidden toggle-shadow"
         >
           {navItems.map((item, idx) => (
             <a
               key={idx}
               href={`#${item.toLowerCase()}`}
-              className="toggle-text cursor-pointer font-bold"
+              className="toggle-text text-gray-800 cursor-pointer font-bold"
             >
               {item}
             </a>

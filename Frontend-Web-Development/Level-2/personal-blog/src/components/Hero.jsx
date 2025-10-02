@@ -60,7 +60,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-4xl lg:text-8xl md:text-6xl font-bold hero-text-head hero-text text-center"
+              className="text-4xl md:text-6xl font-bold hero-text-head hero-text text-center"
             >
               Globe, Grub & Code
             </motion.h1>
@@ -68,7 +68,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-              className="mt-4 text-lg lg:text-4xl md:text-2xl hero-text text-center"
+              className="mt-4 text-lg md:text-2xl hero-text text-center"
             >
               Thoughts, travels, and tech – discover stories, guides, and
               insights.
@@ -81,7 +81,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-                className="mt-6 px-6 py-2 md:py-3 md:px-7 lg:py-4 lg:px-8 md:text-xl font-semibold rounded-lg shadow-lg hero-btn"
+                className="mt-6 px-5 md:px-6 py-2 font-semibold rounded-lg shadow-lg hero-btn md:text-lg text-sm"
               >
                 Explore Now
               </motion.button>
