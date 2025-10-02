@@ -17,7 +17,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Title */}
         <h1 className="text-2xl md:text-4xl font-bold tracking-wide text-indigo-600">
-          <Link to={"/"}>Job Tracker</Link>
+          <Link to={"/"}>CareerVault</Link>
         </h1>
 
         {/* Desktop Navigation */}

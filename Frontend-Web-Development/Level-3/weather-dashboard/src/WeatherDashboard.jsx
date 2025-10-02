@@ -89,7 +89,7 @@ export default function WeatherDashboard() {
 
   return (
     <div className={`min-h-screen bg-gray-100 flex flex-col items-center md:p-6 p-4 w-[100vw] overflow-hidden ${enabled? "dark-body":"light-body"}`}>
-      <h1 className={`text-2xl lg:text-5xl md:text-4xl font-bold mb-6 mt-3 main-heading ${enabled?"text-white":"text-gray-400"}`}>
+      <h1 className={`text-2xl lg:text-5xl md:text-4xl font-bold mb-6 mt-3 main-heading ${enabled?"text-white":"text-gray-500"}`}>
         🌦️ Real-Time Weather Dashboard
       </h1>
 

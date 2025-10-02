@@ -10,7 +10,7 @@ export default function SearchBar({ city, setCity, onSearch, enabled }) {
       />
       <button
         onClick={onSearch}
-        className={`button px-4 py-2 font-bold border border-[2px] transition duration-1 hover:text-white rounded-md ml-1 ${enabled?"dark-button":"light-button"}`}
+        className={`button px-4 py-2 font-bold border border-[2px] transition duration-1 hover:text-white rounded-md ml-1 text-white ${enabled?"dark-button":"light-button"}`}
       >
         Search
       </button>

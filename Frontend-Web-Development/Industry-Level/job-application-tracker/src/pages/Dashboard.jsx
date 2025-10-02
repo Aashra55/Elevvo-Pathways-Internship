@@ -3,6 +3,7 @@ import JobItem from "../components/JobItem";
 import { useState } from "react";
 import { Briefcase, Search, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
+import { Star } from "lucide-react";
 
 export default function Dashboard() {
   const jobs = useSelector((state) => state.jobs.jobs);
@@ -91,11 +92,13 @@ export default function Dashboard() {
           {/* Favorites Toggle */}
           <button
             onClick={() => setShowFavorites(!showFavorites)}
-            className={`px-3 md:py-2 py-1 rounded-md font-medium transition-colors duration-200 md:mr-0 ${
+            className={`flex items-center gap-1 px-3 md:py-2 py-1 rounded-md font-medium transition-colors duration-200 ${
               showFavorites ? "bg-yellow-400 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-300"
             }`}
           >
-            ⭐ Favorites
+            <Star className={`w-4 h-4 ${
+              showFavorites ? "text-white" : "text-yellow-500 fill-yellow-500"
+            }`} /> Favorites
           </button>
         </motion.div>
       </motion.div>

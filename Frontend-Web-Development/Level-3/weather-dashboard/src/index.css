@@ -82,6 +82,10 @@ code {
   scale: 1;
 }
 
+.toggle-dark-circle{
+  background-color: #414141;
+}
+
 .dark-input {
   background-color: #414141;
   color: white;

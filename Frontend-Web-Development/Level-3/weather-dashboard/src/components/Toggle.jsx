@@ -11,7 +11,7 @@ export default function Toggle({changeEnabled, enabled}) {
       >
         <span
           className={`inline-block md:h-6 h-4 md:w-6 w-4 transform rounded-full shadow-md transition-transform duration-300 
-          ${enabled ? "md:translate-x-7 translate-x-6 bg-gray-700" : "translate-x-1 bg-white"}`}
+          ${enabled ? "md:translate-x-7 translate-x-6 toggle-dark-circle" : "translate-x-1 bg-white"}`}
         />
       </button>
       <span className="ml-3 md:text-lg text-md text-gray-200">
