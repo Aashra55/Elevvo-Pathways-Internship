@@ -4,8 +4,11 @@ import { useState } from "react";
 import { Briefcase, Search, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { useDispatch } from "react-redux";
 
 export default function Dashboard() {
+  const dispatch = useDispatch();
+
   const jobs = useSelector((state) => state.jobs.jobs);
 
   const [search, setSearch] = useState("");
@@ -14,19 +17,61 @@ export default function Dashboard() {
   const [showFavorites, setShowFavorites] = useState(false);
 
   const statuses = ["Status", "Applied", "Interviewing", "Offer", "Rejected"];
-  const categories = ["Category", "Internship", "Full-time", "Part-time", "Freelance"];
+  const categories = [
+    "Category",
+    "Internship",
+    "Full-time",
+    "Part-time",
+    "Freelance",
+  ];
 
   const filteredJobs = jobs.filter((job) => {
     const matchesSearch =
       job.companyName.toLowerCase().includes(search.toLowerCase()) ||
       job.jobTitle.toLowerCase().includes(search.toLowerCase());
 
-    const matchesStatus = filterStatus === "Status" ? true : job.status === filterStatus;
-    const matchesCategory = filterCategory === "Category" ? true : job.category === filterCategory;
+    const matchesStatus =
+      filterStatus === "Status" ? true : job.status === filterStatus;
+    const matchesCategory =
+      filterCategory === "Category" ? true : job.category === filterCategory;
     const matchesFavorite = showFavorites ? job.favorite : true;
 
     return matchesSearch && matchesStatus && matchesCategory && matchesFavorite;
   });
+
+  const exportJobs = () => {
+    const blob = new Blob([JSON.stringify(jobs, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "jobs-data.json"; // filename
+    link.click();
+
+    URL.revokeObjectURL(url);
+  };
+
+  const importJobs = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const importedData = JSON.parse(event.target.result);
+        if (Array.isArray(importedData)) {
+          dispatch({ type: "jobs/setJobs", payload: importedData });
+        } else {
+          alert("Invalid file format!");
+        }
+      } catch (error) {
+        alert("Error parsing JSON file!");
+      }
+    };
+    reader.readAsText(file);
+  };
 
   return (
     <div className="p-6 max-w-6xl mx-auto min-h-screen">
@@ -93,14 +138,43 @@ export default function Dashboard() {
           <button
             onClick={() => setShowFavorites(!showFavorites)}
             className={`flex items-center gap-1 px-3 md:py-2 py-1 rounded-md font-medium transition-colors duration-200 ${
-              showFavorites ? "bg-yellow-400 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-300"
+              showFavorites
+                ? "bg-yellow-400 text-white"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-300"
             }`}
           >
-            <Star className={`w-4 h-4 ${
-              showFavorites ? "text-white" : "text-yellow-500 fill-yellow-500"
-            }`} /> Favorites
+            <Star
+              className={`w-4 h-4 ${
+                showFavorites ? "text-white" : "text-yellow-500 fill-yellow-500"
+              }`}
+            />{" "}
+            Favorites
           </button>
         </motion.div>
+      </motion.div>
+
+      <motion.div>
+        {/* Import/Export Buttons */}
+        <div className="flex gap-2 mb-4 md:justify-end">
+          {/* Export Button */}
+          <button
+            onClick={exportJobs}
+            className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
+          >
+            Export
+          </button>
+
+          {/* Import Button */}
+          <label className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition cursor-pointer">
+            Import
+            <input
+              type="file"
+              accept="application/json"
+              onChange={importJobs}
+              className="hidden"
+            />
+          </label>
+        </div>
       </motion.div>
 
       {/* Job List */}
@@ -126,7 +200,10 @@ export default function Dashboard() {
           {filteredJobs.map((job) => (
             <motion.div
               key={job.id}
-              variants={{ hidden: { opacity: 0, scale: 0.9, y: 20 }, visible: { opacity: 1, scale: 1, y: 0 } }}
+              variants={{
+                hidden: { opacity: 0, scale: 0.9, y: 20 },
+                visible: { opacity: 1, scale: 1, y: 0 },
+              }}
               transition={{ duration: 0.4 }}
             >
               <JobItem job={job} />
